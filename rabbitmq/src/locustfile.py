@@ -3,8 +3,6 @@ from rabbitmq import get_client
 from locust import Locust, TaskSet, task, events
 
 class RabbitTaskSet(TaskSet):
-    def on_start(self):
-        print("ON_START")
     @task
     def publish(self):
         get_client().publish()
