@@ -1,8 +1,7 @@
 # Locust.IO Demos
 This project has a few demos of how to use locust.io to load test
-various services. Given as part of a presentation on locust.io!
+various services. Given as part of [a presentation on locust.io](https://speakerdeck.com/jamescarr/load-testing-with-locust-dot-io#)!
 
-<script async class="speakerdeck-embed" data-id="ba3c5801b7f24e16a82a0837974a05d7" data-ratio="1.33333333333333" src="//speakerdeck.com/assets/embed.js"></script>
 
 
 * `quickstart` - The locust.io quickstart tutorial that logs in and load
