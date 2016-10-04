@@ -1,0 +1,19 @@
+version: '2'
+services:
+  grafana:
+    image: grafana/grafana:3.1.1
+    ports:
+      - "3000:3000"
+  overlord:
+    build: .
+    ports:
+      - "8089:8089"
+    volumes:
+      - ".:/srv/app"
+    command: "locust -f /srv/app/locustfile.py --master --master-bind-port=5557 --host http://grafana:3000"
+  minion:
+    build: .
+    volumes:
+      - ".:/srv/app"
+    command: "locust -f /srv/app/locustfile.py --slave --master-host=overlord --master-port=5557"
+
