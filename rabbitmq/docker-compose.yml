@@ -1,0 +1,16 @@
+version: '2'
+services:
+  rabbitmq:
+    image: rabbitmq:3.6-management
+    ports:
+      - "5672:5672"
+      - "15672:15672"
+  locust:
+    build: .
+    ports:
+      - "8089:8089"
+    volumes:
+      - "./src:/srv/app"
+    command: "locust -f /srv/app/locustfile.py"
+    environment:
+      RABBITMQ_CONNECTION: amqp://guest:guest@rabbitmq:5672
