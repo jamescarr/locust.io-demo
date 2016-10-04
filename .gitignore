@@ -1,1 +1,4 @@
 *.pyc
+data/influxdb/wal
+data/influxdb/meta
+data/influxdb/data
