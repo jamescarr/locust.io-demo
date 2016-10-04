@@ -1,6 +1,6 @@
 {
-  "id": 2,
-  "title": "New dashboard Copy",
+  "id": 1,
+  "title": "OurApp Load Test",
   "tags": [],
   "style": "dark",
   "timezone": "browser",
@@ -103,7 +103,7 @@
           },
           "yaxes": [
             {
-              "format": "short",
+              "format": "ms",
               "label": null,
               "logBase": 1,
               "max": null,
@@ -198,7 +198,7 @@
           "timeShift": null,
           "title": "Number of Users",
           "tooltip": {
-            "msResolution": false,
+            "msResolution": true,
             "shared": true,
             "sort": 0,
             "value_type": "cumulative"
@@ -231,8 +231,8 @@
     }
   ],
   "time": {
-    "from": "now-15m",
-    "to": "now"
+    "from": "2016-10-04T15:37:31.762Z",
+    "to": "2016-10-04T15:41:30.981Z"
   },
   "timepicker": {
     "refresh_intervals": [
@@ -265,8 +265,9 @@
   "annotations": {
     "list": []
   },
+  "refresh": false,
   "schemaVersion": 12,
-  "version": 0,
+  "version": 1,
   "links": [],
   "gnetId": null
 }
